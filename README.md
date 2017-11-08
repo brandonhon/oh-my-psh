@@ -1,1 +1,3 @@
-# oh-my-psh
+# Oh-My-Psh
+
+Instructions coming soon. 
