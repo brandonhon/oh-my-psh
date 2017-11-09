@@ -2,8 +2,8 @@
 
 #### NOTE: This is a work in progress (WIP). Use at your own risk.
 
-My version of [Oh-My-Zsh](ohmyz.sh) for Powershell v4+ based soley on the work of Gonzalo Peci and his work
-[Oh-My-Posh](https://github.com/pecigonzalo/Oh-My-Posh). Thank you Gonzalo for the hardwork and the inspiration.
+My version of [Oh-My-Zsh](ohmyz.sh) for Powershell v4+ based soley on the work of Brandon Honeycutt and his work
+[Oh-My-Psh](https://github.com/brandonhon/oh-my-psh). Thank you Gonzalo for the hardwork and the inspiration.
 
 # Installation Instructions
 
@@ -17,12 +17,12 @@ Run:
 
 ```powershell
 cd ~
-iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/pecigonzalo/Oh-My-Posh/master/install.ps1'))
+iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/brandonhon/oh-my-psh/master/install.ps1'))
 ```
 
 Add the following line to your powershell profile:
 ```powershell
-Import-Module "Oh-My-Posh" -DisableNameChecking -NoClobber
+Import-Module "Oh-My-Psh" -DisableNameChecking -NoClobber
 ```
 Now reload your Powershell profile
 

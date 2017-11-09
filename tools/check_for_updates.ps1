@@ -22,7 +22,7 @@ if ($AutoUpdate -eq $true) {
   if ($UpdateAfter -eq 0) { $update = 1 }
   # Call update script
   if ($update){
-    Write-Host "Checking for Oh-My-Posh updates"
+    Write-Host "Checking for Oh-My-Psh updates"
     # Ask for user confirmation about update
     $confirmation = Read-Host "Are you sure you want to update? [y/N]"
     if ($confirmation -ieq "y"){

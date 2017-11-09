@@ -678,7 +678,7 @@ function Transfer-Alarm {
   .Link
 
   .Notes
-  Author:     Gonzalo Peci <gonzalo.peci@paymark.co.nz>
+  Author:     Brandon Honeycutt <bh@hny.io>
 
   Date:       2013-6-4
 

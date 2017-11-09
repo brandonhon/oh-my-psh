@@ -19,7 +19,7 @@ function Install-OMP {
   } else {
     # Clone project
     Write-Output "Cloning Oh-My-Psh from Github"
-    git clone https://github.com/pecigonzalo/Oh-My-Psh.git $Env:USERPROFILE\.oh-my-psh
+    git clone https://github.com/brandonhon/oh-my-psh.git $Env:USERPROFILE\.oh-my-psh
   }
   # Copy module to the user modules folder
   Write-Output "Installting Oh-My-Psh Module"

@@ -1,7 +1,7 @@
 # Check if profile exists
 
 If ( Test-Path ("$Env:USERPROFILE\.oh-my-posh.config.ps1") ) {
-    Write-Output "Detected a Oh-My-Posh Profile"
+    Write-Output "Detected a Oh-My-Psh Profile"
 } else {
     cp $Env:USERPROFILE"\.oh-my-posh\template\oh-my-posh.config.ps1" $Env:USERPROFILE"\.oh-my-posh.config.ps1"
 }
@@ -14,4 +14,3 @@ If ( Test-Path ("$Env:USERPROFILE\.oh-my-posh.config.ps1") ) {
 
 # Execute Oh-My-Powershell
 . $Env:USERPROFILE"\.oh-my-posh\oh-my-posh.ps1"
-

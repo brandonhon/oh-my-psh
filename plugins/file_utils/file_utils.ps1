@@ -1,6 +1,6 @@
 # Credit Adam Driscoll
-# https://github.com/adamdriscoll/PoshInternals/blob/master/PendMoves.ps1
-# This can also be installed by installing the module PoshInternals
+# https://github.com/adamdriscoll/PshInternals/blob/master/PendMoves.ps1
+# This can also be installed by installing the module PshInternals
 
 <#
 .Synopsis
@@ -48,14 +48,14 @@ function Move-FileOnReboot
     )
 
     Begin {    
-        $Flags = [PoshInternals.MoveFileFlags]::MOVEFILE_DELAY_UNTIL_REBOOT
+        $Flags = [PshInternals.MoveFileFlags]::MOVEFILE_DELAY_UNTIL_REBOOT
 
         if ($ReplaceExisting)
         {
-            $flags = $flags -bor [PoshInternals.MoveFileFlags]::MOVEFILE_REPLACE_EXISTING
+            $flags = $flags -bor [PshInternals.MoveFileFlags]::MOVEFILE_REPLACE_EXISTING
         }
 
-        if ([PoshInternals.Kernel32]::MoveFileEx($Path, $Destination,  $flags) -eq 0)
+        if ([PshInternals.Kernel32]::MoveFileEx($Path, $Destination,  $flags) -eq 0)
         {
             throw New-Object System.Win32Exception
         }
@@ -79,9 +79,9 @@ function Remove-FileOnReboot
     )
 
     Begin {    
-        $Flags = [PoshInternals.MoveFileFlags]::MOVEFILE_DELAY_UNTIL_REBOOT
+        $Flags = [PshInternals.MoveFileFlags]::MOVEFILE_DELAY_UNTIL_REBOOT
 
-        if ([PoshInternals.Kernel32]::MoveFileEx($Path, $null, $Flags) -eq 0)
+        if ([PshInternals.Kernel32]::MoveFileEx($Path, $null, $Flags) -eq 0)
         {
             throw New-Object System.Win32Exception
         }
