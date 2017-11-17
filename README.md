@@ -2,8 +2,8 @@
 
 #### NOTE: This is a work in progress (WIP). Use at your own risk.
 
-My version of [Oh-My-Zsh](ohmyz.sh) for Powershell v4+ based soley on the work of Brandon Honeycutt and his work
-[Oh-My-Psh](https://github.com/brandonhon/oh-my-psh). Thank you Gonzalo for the hardwork and the inspiration.
+My version of [Oh-My-Zsh](ohmyz.sh) for Powershell v4+ based on the great work of Gonzalo Peci and his work
+[Oh-My-Psh](https://github.com/brandonhon/oh-my-psh). Thank you Gonzalo for the hard work and inspiration.
 
 # Installation Instructions
 
