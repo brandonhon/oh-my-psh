@@ -8,11 +8,13 @@ My version of [Oh-My-Zsh](ohmyz.sh) for Powershell v4+ based on the great work o
 # Installation Instructions
 
 Requirements:
-* Git - Needed for installing from internet.
 * Powershell 4+ (not tested on previous versions)
 
 
 ### Internet Installation
+Requirements:
+* Git
+
 Run:
 
 ```powershell
