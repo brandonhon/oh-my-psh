@@ -7,13 +7,22 @@ My version of [Oh-My-Zsh](ohmyz.sh) for Powershell v4+ based on the great work o
 
 # Installation Instructions
 
-Requirements:
-* Powershell 4+ (not tested on previous versions)
+**_Requirements:_**
+- *Powershell 4+ (not tested on previous versions)*
 
 
 ### Internet Installation
-Requirements:
-* Git
+**_Requirements:_**
+- *Git - Must be installed for internet installation. Download here :arrow_right: [git-for-windows](https://git-for-windows.github.io)*
+
+During installation the script will check for the presence of a Powershell profile and notify you if one does not exist. At this time you can choose to create one by simply answering the prompt. Please note the script will only create a profile for the running Powershell console. In this case a profile was created for ISE.
+
+```
+No profile found. Would you like to create one now? [y/n]: y
+
+Profile for Windows Powershell ISE Host has been created
+Enjoy!
+```
 
 Run:
 
@@ -21,6 +30,8 @@ Run:
 cd ~
 iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/brandonhon/oh-my-psh/master/install.ps1'))
 ```
+The installation script should prepend the correct Import-Module line to the powershell profile. To check
+run ```notepad $PROFILE```.
 
 Add the following line to your powershell profile:
 ```powershell
