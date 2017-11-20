@@ -19,7 +19,7 @@ function Install ($Module = "") {
 function Clean ($Modules = "") {
   $Installed_Modules = Get-Module -ListAvailable | Where-Object {$_.Path -like "$([Environment]::GetFolderPath("mydocuments"))\WindowsPowerShell\Modules*"}
   foreach ($Installed in $Installed_Modules) {
-    if ( $Installed.Name -eq "oh-my-posh" ) {
+    if ( $Installed.Name -eq "oh-my-psh" ) {
       # Do not remove myself
     } elseif ( ! ($Modules.Contains($Installed.Name) -or $Modules.Contains("$($Installed.Name):$($Installed.Version.ToString())")) ) {
       $confirmation = Read-Host "This will uninstalling $Installed [y/N]"

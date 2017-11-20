@@ -1,10 +1,10 @@
 try {
     Get-command -Name "git" -ErrorAction Stop >$null
-    if (Get-Module "posh-git" -ListAvailable) {
+    if (Get-Module "psh-git" -ListAvailable) {
         $gitStatus = $true
     } else { throw }
 } catch {
-    Write-Warning "Missing git support, install posh-git with 'Install-Module posh-git' and restart cmder."
+    Write-Warning "Missing git support, install psh-git with 'Install-Module psh-git' and restart cmder."
     $gitStatus = $false
 }
 

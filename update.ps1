@@ -1,6 +1,6 @@
 # Go into the installation repository
 # Get new code and rebase current changes
-Push-Location "$Env:USERPROFILE\.oh-my-posh"
+Push-Location "$Env:USERPROFILE\.oh-my-psh"
 git pull --rebase --stat origin master
 if ($LASTEXITCODE) {
   Pop-Location
@@ -11,7 +11,7 @@ Pop-Location
 # Copy module to the user modules folder
 Write-Host "Installing Oh-My-Psh Module"
 New-Item -Type Directory "$([Environment]::GetFolderPath("mydocuments"))\WindowsPowerShell\Modules" -Force | Out-Null
-Copy-Item -Recurse -Force $Env:USERPROFILE\.oh-my-posh\modules\oh-my-posh  `
+Copy-Item -Recurse -Force $Env:USERPROFILE\.oh-my-psh\modules\oh-my-psh  `
   "$([Environment]::GetFolderPath("mydocuments"))\WindowsPowerShell\Modules\"
 
 # If all good, let the user know
