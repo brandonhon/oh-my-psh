@@ -10,7 +10,7 @@ function Install-OMP {
   Check-Recommends
   Check-Dependencies
 
-  Write-Output "Deleting $Env:USERPROFILE\.oh-my-sph"
+  Write-Output "Deleting $Env:USERPROFILE\.oh-my-psh"
   Remove-Item -Force -Recurse "$Env:USERPROFILE\.oh-my-psh" -ErrorAction SilentlyContinue
   if ($local) {
     # Deploy from current folder
@@ -55,7 +55,7 @@ if ( Test-Path $Env:USERPROFILE\.oh-my-psh ) {
 } else {
   Install-OMP
 }
-.$PROFILE
+. $PROFILE
 
 
 
